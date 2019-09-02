@@ -1,0 +1,118 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1906743763238488}
+  m_IsPrefabAsset: 1
+--- !u!1 &1906743763238488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4372423882697074}
+  - component: {fileID: 114068245174012042}
+  - component: {fileID: 114105435158525748}
+  - component: {fileID: 114470300423784136}
+  - component: {fileID: 114480395077256952}
+  m_Layer: 0
+  m_Name: InputController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4372423882697074
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906743763238488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114068245174012042
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906743763238488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bd8038a8c6fcf642b5a3053b4b42aa6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraObject: {fileID: 0}
+  currentControllerType: 1
+--- !u!114 &114105435158525748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906743763238488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75ef15fb4e1b1704f9a43769d32c779e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isActive: 1
+  isControllable: 1
+  reverseXAxis: 0
+  reverseYAxis: 1
+  minZoomAmount: 3
+  maxZoomAmount: 60
+  cameraTarget: {fileID: 4372423882697074}
+  mouseSensitivity: {x: 25, y: 25}
+  cameraOffset: {x: 0, y: 2, z: 0}
+  cameraFOV: 60
+--- !u!114 &114470300423784136
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906743763238488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 520870512286eab458a4cadb083ee3e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputMouseKey0: 0
+  inputMouseKeyDown0: 0
+  inputMouseKey1: 0
+  inputMouseKey2: 0
+  inputKeyShift: 0
+  inputKeySpace: 0
+  inputKeyW: 0
+  inputKeyA: 0
+  inputKeyS: 0
+  inputKeyD: 0
+  inputKeyF: 0
+  inputKeyQ: 0
+  inputKeyE: 0
+  inputKeyESC: 0
+  inputMouseX: 0
+  inputMouseY: 0
+  inputMouseWheel: 0
+--- !u!114 &114480395077256952
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1906743763238488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6c94dc3a52eceb47935f05cebe9d652, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -1,0 +1,54 @@
+﻿{
+  "bridgeLength": 175.92,
+  "carList": [
+    {
+      "axlesNumber": 2,
+      "laneNo": 12,
+      "axleOffset": 1.6875,
+      "speed": 81,
+      "acTime": "2019-07-02 17:36:57"
+    },
+    {
+      "axlesNumber": 6,
+      "laneNo": 32,
+      "axleOffset": 99.69222222222223,
+      "speed": 94,
+      "acTime": "2019-07-02 17:36:53"
+    },
+    {
+      "axlesNumber": 5,
+      "laneNo": 31,
+      "axleOffset": 130.295,
+      "speed": 99,
+      "acTime": "2019-07-02 17:36:52"
+    },
+    {
+      "axlesNumber": 5,
+      "laneNo": 32,
+      "axleOffset": 134.39888888888888,
+      "speed": 97,
+      "acTime": "2019-07-02 17:36:52"
+    },
+    {
+      "axlesNumber": 7,
+      "laneNo": 13,
+      "axleOffset": 61.6875,
+      "speed": 81,
+      "acTime": "2019-07-02 17:36:57"
+    },
+    {
+      "axlesNumber": 8,
+      "laneNo": 11,
+      "axleOffset": 18.6875,
+      "speed": 81,
+      "acTime": "2019-07-02 17:36:57"
+    },
+    {
+      "axlesNumber": 6,
+      "laneNo": 13,
+      "axleOffset": 138.6,
+      "speed": 80,
+      "acTime": "2019-07-02 17:36:51"
+    }
+  ]
+}
