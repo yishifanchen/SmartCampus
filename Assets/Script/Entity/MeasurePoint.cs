@@ -15,16 +15,16 @@ public class MeasurePoint : MonoBehaviour {
     SphereCollider sphereCollider;
     private void Start()
     {
-        sphereTrans = transform.GetChild(0);
+        //sphereTrans = transform.GetChild(0);
         sphereCollider = GetComponent<SphereCollider>();
         highlighter = GetComponent<Highlighter>();
         highlighterFlashing = GetComponent<HighlighterFlashing>();
     }
     private void Update()
     {
-        sphereTrans.localScale = Vector3.one*(ControllerOrbit.followDistance*0.015f);
-        sphereTrans.localScale = new Vector3(Mathf.Clamp(sphereTrans.localScale.x,0.15f,0.7f), Mathf.Clamp(sphereTrans.localScale.y, 0.15f, 0.7f), Mathf.Clamp(sphereTrans.localScale.z, 0.15f, 0.7f));
-        sphereCollider.radius = sphereTrans.localScale.x / 2;
+        //sphereTrans.localScale = Vector3.one*(ControllerOrbit.followDistance*0.015f);
+        //sphereTrans.localScale = new Vector3(Mathf.Clamp(sphereTrans.localScale.x,0.15f,0.7f), Mathf.Clamp(sphereTrans.localScale.y, 0.15f, 0.7f), Mathf.Clamp(sphereTrans.localScale.z, 0.15f, 0.7f));
+        //sphereCollider.radius = sphereTrans.localScale.x / 2;
     }
     /// <summary>
     /// 设置测点信息
