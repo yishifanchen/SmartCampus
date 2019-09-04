@@ -24,6 +24,14 @@ public class GameManager : MonoBehaviour
     public Transform endPoint;
     public Transform endPoint1;
 
+
+    public GameObject flowDian;
+
+    public GameObject rain;
+
+    public Material skyRain;
+    public Material skySun;
+
     /// <summary>
     /// 病害类型-构件列表数组
     /// </summary>
@@ -89,16 +97,36 @@ public class GameManager : MonoBehaviour
     }
 
 
-    //private void Update()
-    //{
-    //    if (Input.GetKeyDown(KeyCode.L))
-    //    {
-    //        CallBackWGL_LocationConstructionMember("左幅_23#墩墩基础");
-    //    }
-    //}
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            SetRain("true");
+        }
+        if (Input.GetKeyDown(KeyCode.K))
+        {
+            SetRain("false");
+        }
+    }
     void LoadVeh()
     {
         LoadVehicleData(DataHandler.LoadLoaclVehicleDatas());
+    }
+    public void SetFlow(string isbool)
+    {
+        flowDian.SetActive(bool.Parse(isbool));
+    }
+    public void SetRain(string isbool)
+    {
+        rain.SetActive(bool.Parse(isbool));
+        if (bool.Parse(isbool))
+        {
+            RenderSettings.skybox = skySun;
+        }
+        else
+        {
+            RenderSettings.skybox = skyRain;
+        }
     }
     /// <summary>
     /// 设置所有构件颜色初始化
