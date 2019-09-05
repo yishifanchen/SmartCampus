@@ -118,15 +118,23 @@ public class GameManager : MonoBehaviour
     }
     public void SetRain(string isbool)
     {
-        rain.SetActive(bool.Parse(isbool));
-        if (bool.Parse(isbool))
+        try
         {
-            RenderSettings.skybox = skySun;
+            rain.SetActive(bool.Parse(isbool));
+            if (bool.Parse(isbool))
+            {
+                RenderSettings.skybox = skySun;
+            }
+            else
+            {
+                RenderSettings.skybox = skyRain;
+            }
         }
-        else
+        catch(Exception e)
         {
-            RenderSettings.skybox = skyRain;
+            DataHandler.CallWGL("WGLDebugLog", e.ToString());//网页日志
         }
+        
     }
     /// <summary>
     /// 设置所有构件颜色初始化
