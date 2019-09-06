@@ -107,6 +107,10 @@ public class GameManager : MonoBehaviour
         {
             SetRain("false");
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            CallBackWGL_LocationMeasurePoint("摄像头1");
+        }
     }
     void LoadVeh()
     {
